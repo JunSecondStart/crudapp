@@ -20,3 +20,5 @@ Route::get('/', function () {
 Route::get('person', 'App\Http\Controllers\PersonController@index');
 
 Route::get('company', 'App\Http\Controllers\CompanyController@index');
+
+Route::get('image_path', 'App\Http\Controllers\ImagePathController@index');
