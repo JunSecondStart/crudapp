@@ -22,6 +22,6 @@ class ImagePath extends Model
 
     public function getData()
     {
-        return $this->id . ': ' . $this->image_path1;
+        return $this->id . ': ' . $this->image_path1 . $this->image_path2;
     }
 }
