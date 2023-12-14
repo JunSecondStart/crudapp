@@ -11,6 +11,15 @@
         <td>{{$item->panels}}</td>
         <td>{{$item->capacity}}</td>
         <td>{{$item->start}}</td>
+        <td>
+            @if ($item->imagePaths != null)
+            <table width="100%">
+                @foreach ($item-> imagePaths as $obj)
+                <tr><td>{{$obj->getData()}}</td></tr>
+                @endforeach
+            </table>
+            @endif
+        </td>
     </tr>
     @endforeach
 </table>

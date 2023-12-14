@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('image_paths', function (Blueprint $table) {
                                 $table->increments('id');
-                                $table->integer('image_path_id');
+                                $table->integer('company_id');
                                 $table->string('image_path1');
                                 $table->string('image_path2');
                                 $table->string('image_path3');
@@ -22,7 +22,7 @@ return new class extends Migration
                                 $table->timestamps();
         });
     }
-
+    
     /**
      * Reverse the migrations.
      */
