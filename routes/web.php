@@ -17,8 +17,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('person', 'App\Http\Controllers\PersonController@index');
+Route::get('person', 'App\Http\Controllers\PersonController@index')->name('person.index');
 
-Route::get('company', 'App\Http\Controllers\CompanyController@index');
+Route::get('company', 'App\Http\Controllers\CompanyController@index')->name('company.index');
 
-Route::get('image_path', 'App\Http\Controllers\ImagePathController@index');
+Route::get('image_path', 'App\Http\Controllers\ImagePathController@index')->name('image_path.index');
