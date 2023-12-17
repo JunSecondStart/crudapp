@@ -1,0 +1,12 @@
+.card-space{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+.card{
+    margin: 2rem;
+}
+.h2,.h5 {
+    text-align: center;
+}
