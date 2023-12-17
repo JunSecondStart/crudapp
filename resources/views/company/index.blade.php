@@ -15,7 +15,8 @@
             @if ($item->imagePaths != null)
             <table width="100%">
                 @foreach ($item-> imagePaths as $obj)
-                <tr><td>{{$obj->getData()}}</td></tr>
+                <td><img src="{{asset($obj->image_path1)}}"　width="250" height="250"></td>
+                <td><img src="{{asset($obj->image_path2)}}"　width="250" height="250"></td>
                 @endforeach
             </table>
             @endif
