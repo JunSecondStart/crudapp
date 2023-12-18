@@ -13,8 +13,13 @@
                         <img src="{{asset($obj->image_path1)}}" class="card-img-top" alt="card_image" width="250" height="250">
                         @endforeach
                         <div class="card-body">
-                            <h5 class="card-title">{{$item->id}}:{{$item->company_name}}</h5>
-                            <p class="card-text">explain</p>
+                            <h5 class="card-title"><p>{{$item->id}}：{{$item->company_name}}</p>＜{{$item->place}}＞</h5>
+                            <p class="card-text">
+                                <p>設置面積：{{$item->square}}</>
+                                <p>パネル枚数：{{$item->panels}}</p>
+                                <p>容量：{{$item->capacity}}</p>
+                                <p>導入時期：{{$item->start}}</p>
+                            </p>
                             <a href="#" class="btn btn-primary">link</a>
                         </div>
                     </div>
@@ -22,7 +27,7 @@
         @endforeach
         </section>        
 
-        <section>
+        <!-- <section>
             <h2>Read</h2>
             <h5>-MysqlにInsertされている各データの読み込み＋App上に保存されている画像の表示（画像へアクセスするパスをDB内に保存）-</h5>
             <table>
@@ -49,7 +54,7 @@
                 </tr>
                 @endforeach
             </table>
-        </section>
+        </section> -->
 
     </body>
 </html>
